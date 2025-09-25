@@ -55,6 +55,7 @@ silver_df.createOrReplaceTempView("retail_d`ata")
 
 
 ### Run analytics with SQL:
+
 ```sql
 -- Daily Revenue
 SELECT DATE(TransactionDate) AS txn_date,
@@ -84,6 +85,7 @@ SELECT SUM(amount) AS total_revenue, ProductCategory
 FROM retail_data
 GROUP BY ProductCategory;
 
+
 ### Notes
-####Replace placeholders (<application-id>, <scope-name>, <storage-account-name>, etc.) with your Azure details.
+### Replace placeholders (<application-id>, <scope-name>, <storage-account-name>, etc.) with your Azure details.
 
